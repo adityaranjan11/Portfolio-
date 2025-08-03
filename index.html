@@ -1,0 +1,74 @@
+// Portfolio Website in React with Tailwind CSS
+
+import React from "react";
+
+export default function Portfolio() {
+return (
+<div className="min-h-screen bg-white text-gray-800 font-sans p-6">
+    {/* Header Section */}
+    <header className="text-center mb-10">
+        <h1 className="text-4xl font-bold mb-2">Aditya Ranjan</h1>
+        <p className="text-lg text-gray-600">AI/ML Intern | Python Developer | MCA Student</p>
+    </header>
+
+    {/* About Section */}
+    <section className="mb-10">
+        <h2 className="text-2xl font-semibold mb-2">About Me</h2>
+        <p className="text-gray-700">
+            Hi, I’m Aditya Ranjan, an aspiring Python Developer and AI/ML enthusiast currently pursuing my MCA. I’ve
+            worked as an AI/ML Intern, and I’m passionate about building data-driven solutions and automating tasks
+            using Python.
+        </p>
+    </section>
+
+    {/* Skills Section */}
+    <section className="mb-10">
+        <h2 className="text-2xl font-semibold mb-2">Skills & Tools</h2>
+        <ul className="list-disc list-inside text-gray-700">
+            <li>Languages: Python, SQL, HTML/CSS, JavaScript (basic)</li>
+            <li>Libraries: Pandas, NumPy, Scikit-learn, Matplotlib</li>
+            <li>Tools: Git, Jupyter Notebook, VS Code</li>
+        </ul>
+    </section>
+
+    {/* Projects Section */}
+    <section className="mb-10">
+        <h2 className="text-2xl font-semibold mb-2">Projects</h2>
+        <div className="space-y-4">
+            <div>
+                <h3 className="font-bold">1. Data Cleaning & Imputation using LLMs</h3>
+                <p>Built a tool using GPT APIs to clean and fill missing values in large datasets.</p>
+            </div>
+            <div>
+                <h3 className="font-bold">2. Weather App using API</h3>
+                <p>A Python app that fetches weather data from an API and displays it via GUI or CLI.</p>
+            </div>
+            <div>
+                <h3 className="font-bold">3. IPL EDA Analysis</h3>
+                <p>Visualized and analyzed IPL stats using Pandas, Seaborn, and Matplotlib.</p>
+            </div>
+        </div>
+    </section>
+
+    {/* Education & Certifications Section */}
+    <section className="mb-10">
+        <h2 className="text-2xl font-semibold mb-2">Education & Certifications</h2>
+        <p>MCA, IILM University, Greater Noida</p>
+        <ul className="list-disc list-inside text-gray-700 mt-2">
+            <li>Python for Everybody – Coursera</li>
+            <li>Machine Learning – Andrew Ng</li>
+            <li>Data Analysis with Python – freeCodeCamp</li>
+        </ul>
+    </section>
+
+    {/* Contact Section */}
+    <section>
+        <h2 className="text-2xl font-semibold mb-2">Contact Me</h2>
+        <p>Email: your.email@example.com</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+        <p>GitHub: github.com/yourusername</p>
+        <p className="mt-2">📄 <a href="#" className="text-blue-600 underline">Download Resume</a></p>
+    </section>
+</div>
+);
+}
