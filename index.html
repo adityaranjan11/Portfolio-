@@ -1,73 +1,257 @@
-import React from "react";
+<!DOCTYPE html>
+<html lang="en">
 
-export default function Portfolio() {
-return (
-<div className="min-h-screen bg-white text-gray-800 font-sans p-6">
-    {/* Header Section */}
-    <header className="text-center mb-10">
-        <h1 className="text-4xl font-bold mb-2">Aditya Ranjan</h1>
-        <p className="text-lg text-gray-600">AI/ML Intern | Python Developer | MCA Student</p>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Aditya Ranjan — Data Analyst</title>
+
+    <!-- Fonts & icons -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/cca6e3323d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="site-header" id="home">
+        <div class="container header-grid">
+            <div class="brand">
+                <img src="images/logo10.png" alt="Aditya Ranjan logo" class="logo" />
+                <div class="brand-text">
+                    <h1>Aditya Ranjan</h1>
+                    <p class="muted">MCA (AI & ML) • Data Analyst</p>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="hero container">
+            <div class="hero-left">
+                <h2>Hi — I'm Aditya.</h2>
+                <p class="lead">
+                    MCA graduate & aspiring Data Analyst. I build data pipelines, clean messy datasets using LLMs,
+                    and ship interactive dashboards that help teams make decisions faster.
+                </p>
+
+                <div class="cta-row">
+                    <a href="files/Aditya_Ranjan_Resume.pdf" class="btn" download>Download Resume</a>
+                    <a href="https://github.com/adityaranjan11" class="btn ghost" target="_blank"
+                        rel="noopener">GitHub</a>
+                </div>
+
+                <ul class="contact-inline">
+                    <li><i class="fa-regular fa-envelope"></i> <a
+                            href="mailto:ranjanaditya77969@gmail.com">ranjanaditya77969@gmail.com</a></li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+917007593566">+91-7007593566</a></li>
+                    <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/aditya-ranjan20503"
+                            target="_blank" rel="noopener">linkedin.com/in/aditya-ranjan20503</a></li>
+                </ul>
+            </div>
+
+            <div class="hero-right">
+                <img src="images/user1.png" alt="Aditya profile" class="profile-img" />
+            </div>
+        </div>
     </header>
 
-    {/* About Section */}
-    <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-2">About Me</h2>
-        <p className="text-gray-700">
-            Hi, I’m Aditya Ranjan, an aspiring Python Developer and AI/ML enthusiast currently pursuing my MCA. I’ve
-            worked as an AI/ML Intern, and I’m passionate about building data-driven solutions and automating tasks
-            using Python.
-        </p>
-    </section>
-
-    {/* Skills Section */}
-    <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-2">Skills & Tools</h2>
-        <ul className="list-disc list-inside text-gray-700">
-            <li>Languages: Python, SQL, HTML/CSS, JavaScript (basic)</li>
-            <li>Libraries: Pandas, NumPy, Scikit-learn, Matplotlib</li>
-            <li>Tools: Git, Jupyter Notebook, VS Code</li>
-        </ul>
-    </section>
-
-    {/* Projects Section */}
-    <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-2">Projects</h2>
-        <div className="space-y-4">
-            <div>
-                <h3 className="font-bold">1. Data Cleaning & Imputation using LLMs</h3>
-                <p>Built a tool using GPT APIs to clean and fill missing values in large datasets.</p>
+    <!-- Skills -->
+    <section id="skills" class="section container">
+        <h2 class="section-title">Skills & Tools</h2>
+        <div class="skills-grid">
+            <div class="skill">
+                <h3>Data & Analysis</h3>
+                <p>Python (pandas, numpy), SQL, Excel, EDA, data cleaning, imputation techniques</p>
             </div>
-            <div>
-                <h3 className="font-bold">2. Weather App using API</h3>
-                <p>A Python app that fetches weather data from an API and displays it via GUI or CLI.</p>
+            <div class="skill">
+                <h3>Visualization & BI</h3>
+                <p>Power BI, Tableau, matplotlib, plotting & dashboarding for decision makers</p>
             </div>
-            <div>
-                <h3 className="font-bold">3. IPL EDA Analysis</h3>
-                <p>Visualized and analyzed IPL stats using Pandas, Seaborn, and Matplotlib.</p>
+            <div class="skill">
+                <h3>ML & Tools</h3>
+                <p>scikit-learn, predictive modeling, feature engineering, model evaluation</p>
+            </div>
+            <div class="skill">
+                <h3>Web & Dev</h3>
+                <p>HTML/CSS/JS basics, simple web dashboards — useful for prototyping visual tools</p>
             </div>
         </div>
     </section>
 
-    {/* Education & Certifications Section */}
-    <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-2">Education & Certifications</h2>
-        <p>MCA, IILM University, Greater Noida</p>
-        <ul className="list-disc list-inside text-gray-700 mt-2">
-            <li>Python for Everybody – Coursera</li>
-            <li>Machine Learning – Andrew Ng</li>
-            <li>Data Analysis with Python – freeCodeCamp</li>
-        </ul>
+    <!-- Projects -->
+    <section id="projects" class="section container">
+        <h2 class="section-title">Selected Projects</h2>
+
+        <div class="project">
+            <div class="project-meta">
+                <h3>Data Cleaning & Imputation using Large Language Models</h3>
+                <p class="muted">Jan — Mar 2025</p>
+            </div>
+            <p>
+                Built an automated pipeline to clean and impute missing values in large mixed-format datasets.
+                Combined pandas preprocessing with LLM-powered context-aware imputation for text fields and
+                statistical imputation (mean/median/mode) for numeric and categorical columns.
+            </p>
+            <ul>
+                <li>Increased dataset completeness from 78% → 95% and reduced manual cleaning time by ~70%.</li>
+                <li>Stack: Python (pandas, numpy), OpenAI API, scikit-learn, SQL.</li>
+            </ul>
+            <div class="project-links">
+                <!-- replace with actual repo if available -->
+                <a href="https://github.com/adityaranjan11" target="_blank" rel="noopener">View GitHub</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-meta">
+                <h3>Retail Sales Dashboard</h3>
+                <p class="muted">May — Jun 2025</p>
+            </div>
+            <p>
+                Designed an interactive Power BI dashboard to visualize sales, profitability and regional trends.
+                Dashboard connected to SQL-based transaction data and automated weekly reports.
+            </p>
+            <ul>
+                <li>Reduced manual reporting time by ~70% and enabled quicker region-based action by managers.</li>
+                <li>Stack: Power BI, SQL, Excel.</li>
+            </ul>
+            <div class="project-links">
+                <a href="https://github.com/adityaranjan11" target="_blank" rel="noopener">View GitHub</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-meta">
+                <h3>Employee Performance Predictor — Workwise Analytics</h3>
+                <p class="muted">Personal / Internship project</p>
+            </div>
+            <p>
+                Built predictive models (Random Forest, Linear Regression) to estimate employee performance from HR
+                metrics. Performed preprocessing, feature selection and model evaluation.
+            </p>
+            <ul>
+                <li>Reported R² / MAE metrics and achieved strong predictive performance on test split.</li>
+                <li>Stack: Python, scikit-learn, pandas, matplotlib.</li>
+            </ul>
+            <div class="project-links">
+                <a href="https://github.com/adityaranjan11/employee_performance_predictor.ipynb.git" target="_blank"
+                    rel="noopener">Notebook / Repo</a>
+            </div>
+        </div>
     </section>
 
-    {/* Contact Section */}
-    <section>
-        <h2 className="text-2xl font-semibold mb-2">Contact Me</h2>
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: linkedin.com/in/yourprofile</p>
-        <p>GitHub: github.com/yourusername</p>
-        <p className="mt-2">📄 <a href="#" className="text-blue-600 underline">Download Resume</a></p>
-    </section>
-</div>
-);
+    <!-- Experience -->
+    <section id="experience" class="section container">
+        <h2 class="section-title">Experience</h2>
 
-}
+        <div class="exp-list">
+            <div class="exp-item">
+                <h3>Generative AI Intern — YBI Foundation (Remote)</h3>
+                <p class="muted">June 2025 — July 2025</p>
+                <ul>
+                    <li>Worked on projects involving LLMs for data augmentation & imputation pipelines.</li>
+                    <li>Integrated language-model based helpers into data-cleaning workflows to fix text fields and
+                        labels.</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <h3>Virtual Internships</h3>
+                <p class="muted">May 2023 — June 2023</p>
+                <ul>
+                    <li>Deloitte Technology — Virtual Internship Program (data & analytics exposure)</li>
+                    <li>Walmart Global Tech — Virtual Internship Program (intro to engineering & data workflows)</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <h3>Other Projects / Internships</h3>
+                <p class="muted">May 2024 — June 2024</p>
+                <ul>
+                    <li>Bobina Hotel Website model (web UI prototype)</li>
+                    <li>Samsung Campus Innovation Internship — product discovery & prototype</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section container">
+        <h2 class="section-title">Education</h2>
+        <div class="edu-grid">
+            <div class="edu">
+                <h3>IILM University, Greater Noida — MCA (AI & ML)</h3>
+                <p class="muted">Sep 2024 — Jul 2026 (in progress)</p>
+                <p>CGPA: 6.5/10</p>
+            </div>
+            <div class="edu">
+                <h3>Kristu Jayanti College — BCA (Data)</h3>
+                <p class="muted">Aug 2021 — Jul 2024</p>
+                <p>CGPA: 6.8/10</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact" class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Contact</h3>
+                <p><i class="fa-regular fa-envelope"></i> <a
+                        href="mailto:ranjanaditya77969@gmail.com">ranjanaditya77969@gmail.com</a></p>
+                <p><i class="fa-solid fa-phone"></i> <a href="tel:+917007593566">+91-7007593566</a></p>
+            </div>
+
+            <div>
+                <h3>Links</h3>
+                <ul class="footer-links">
+                    <li><a href="https://github.com/adityaranjan11" target="_blank" rel="noopener"><i
+                                class="fa-brands fa-github"></i> GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/aditya-ranjan20503" target="_blank" rel="noopener"><i
+                                class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://adityaranjan11.github.io/Portfolio-/" target="_blank" rel="noopener"><i
+                                class="fa-solid fa-globe"></i> Live portfolio</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Message</h3>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" placeholder="Your message" rows="4" required></textarea>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 Aditya Ranjan · All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+<script>
+    // Simple form submission handler
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        alert('Thank you for your message! I will get back to you soon.');
+        this.reset(); // Reset the form fields
+    });
+</script>
